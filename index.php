@@ -24,17 +24,21 @@
             </thead>
             <tbody> 
                 <?php
-                $host = 'localhost:3306';
-                $username = 'root';
-                $password = 'LUis21tecmont$%'; // Replace with your actual password
-                $database = 'firstdatabase';
+                // $host = 'localhost:3306';
+                // $username = 'root';
+                // $password = 'LUis21tecmont$%'; // Replace with your actual password
+                // $database = 'firstdatabase';
                 
-                try {
-                    $connection = new mysqli($host, $username, $password, $database);
-                    // Rest of your code for database operations    
-                } catch (mysqli_sql_exception $e) {
-                    die("Connection failed: " . $e->getMessage());
-                }
+                // try {
+                //     $connection = new mysqli($host, $username, $password, $database);
+                //     // Rest of your code for database operations    
+                // } catch (mysqli_sql_exception $e) {
+                //     die("Connection failed: " . $e->getMessage());
+                // }
+
+                include 'DatabaseConnection.php';
+
+
                 //read all row from database table
                 $sql = "SELECT * FROM  user";
                 $result = $connection->query($sql);

@@ -1,12 +1,13 @@
 <?php
 
-$host = "localhost:3306";
-$serverusername = "root";
-$password = "LUis21tecmont$%";
-$database = "firstdatabase";
+// $host = "localhost:3306";
+// $serverusername = "root";
+// $password = "LUis21tecmont$%";
+// $database = "firstdatabase";
 
-//crear conexion una vez mas
-$connection = new mysqli($host, $serverusername, $password, $database);
+// $connection = new mysqli($host, $serverusername, $password, $database);
+
+include 'DatabaseConnection.php';
 
 
 $username = "";

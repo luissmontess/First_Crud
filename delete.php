@@ -2,12 +2,14 @@
     if(isset($_GET["iduser"])){
         $iduser = $_GET["iduser"];
 
-        $host = "localhost:3306";
-        $serverusername = "root";
-        $password = "LUis21tecmont$%";
-        $database = "firstdatabase";
+        // $host = "localhost:3306";
+        // $serverusername = "root";
+        // $password = "LUis21tecmont$%";
+        // $database = "firstdatabase";
 
-        $connection = new mysqli($host, $serverusername, $password, $database);
+        // $connection = new mysqli($host, $serverusername, $password, $database);
+
+        include 'DatabaseConnection.php';
 
         $sql = "DELETE FROM user WHERE iduser = $iduser";
         $connection->query($sql);
